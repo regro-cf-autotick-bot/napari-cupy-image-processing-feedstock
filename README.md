@@ -5,7 +5,7 @@ Home: https://github.com/haesleinhuepf/napari-cupy-image-processing
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-cupy-image-processing-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-cupy-image-processing-feedstock/blob/main/LICENSE.txt)
 
 Summary: GPU-accelerated image processing using CUDA
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15366&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/napari-cupy-image-processing-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15366&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/napari-cupy-image-processing-feedstock?branchName=main">
       </a>
     </td>
   </tr>
