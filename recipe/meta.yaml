@@ -1,5 +1,5 @@
 {% set name = "napari-cupy-image-processing" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-cupy-image-processing-{{ version }}.tar.gz
-  sha256: ec61ce5c26877220c6275abf29fa5508be419ab8ebad251205a88447ff596165
+  sha256: 6f886d58ab678e367a1be0fa0377e0809f6b01e0a6303377268efd821f727fdc
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - python >=3.7
     - scikit-image
     - toolz
+    - napari-assistant
 
 test:
   imports:
