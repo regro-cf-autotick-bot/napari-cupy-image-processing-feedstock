@@ -1,5 +1,5 @@
 {% set name = "napari-cupy-image-processing" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-cupy-image-processing-{{ version }}.tar.gz
-  sha256: 20bdc48a73ed685e77bed549b649cb38e64faf81cedccd114946248435080a7c
+  sha256: a3b652eab53680355448db941a2ade16f82185ccb697a37f6aa82a39247fc28f
 
 build:
   noarch: python
@@ -23,12 +23,13 @@ requirements:
     - napari-plugin-engine >=0.1.4
     - napari-skimage-regionprops
     - napari-time-slicer
-    - napari-tools-menu
+    - napari-tools-menu >=0.1.17
     - numpy
     - python >=3.7
     - scikit-image
     - toolz
     - napari-assistant
+    - stackview >=0.3.2
 
 test:
   imports:
