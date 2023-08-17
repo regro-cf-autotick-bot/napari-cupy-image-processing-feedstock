@@ -1,11 +1,11 @@
-About napari-cupy-image-processing
-==================================
+About napari-cupy-image-processing-feedstock
+============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-cupy-image-processing-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/haesleinhuepf/napari-cupy-image-processing
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-cupy-image-processing-feedstock/blob/main/LICENSE.txt)
 
 Summary: GPU-accelerated image processing using CUDA
 
