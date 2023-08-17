@@ -1,5 +1,5 @@
 {% set name = "napari-cupy-image-processing" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-cupy-image-processing-{{ version }}.tar.gz
-  sha256: a3b652eab53680355448db941a2ade16f82185ccb697a37f6aa82a39247fc28f
+  sha256: fc52befc6827d5a10550e90e6cb0a8383d1594b5c255f41d2b6daf6a7908017b
 
 build:
   noarch: python
