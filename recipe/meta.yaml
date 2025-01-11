@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-cupy-image-processing-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-cupy-image-processing-{{ version }}.tar.gz
   sha256: fc52befc6827d5a10550e90e6cb0a8383d1594b5c255f41d2b6daf6a7908017b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - cupy
     - napari-plugin-engine >=0.1.4
@@ -25,7 +25,7 @@ requirements:
     - napari-time-slicer
     - napari-tools-menu >=0.1.17
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
     - scikit-image
     - toolz
     - napari-assistant
@@ -39,6 +39,7 @@ test:
     # - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/haesleinhuepf/napari-cupy-image-processing
